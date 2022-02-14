@@ -11,22 +11,23 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       kokkieh-random-quote-block
- * Domain Path:       /public/lang
+ * Domain Path:       /languages
  */
 
 // testing that plugin works
-function kokkieh_hello_world () {
+function kokkieh_quote_hello_world () {
     _e( 'Hello World!', 'kokkieh-random-quote-block' );
 }
 
-add_filter( 'the_content', 'kokkieh_hello_world' );
+add_filter( 'the_content', 'kokkieh_quote_hello_world' );
 
 // Internationalize plugin
 
 add_action( 'init', 'kokkieh_quote_load_textdomain' );
 
 function kokkieh_quote_load_textdomain() {
-    load_plugin_textdomain( 'kokkieh-random-quote-block',
+    load_plugin_textdomain( 
+        'kokkieh-random-quote-block',
         false,
         'kokkieh-random-quote-block/languages'
     );
@@ -62,7 +63,7 @@ function kokkieh_quote_settings_page() {
 
             settings_fields( PAGE_SLUG );
             do_settings_sections( PAGE_SLUG );
-            submit_button ( 'Save Changes', 'primary' );
+            submit_button ( __('Save Changes', 'kokkieh-random-quote-block'), 'primary' );
 
             ?>
         </form>

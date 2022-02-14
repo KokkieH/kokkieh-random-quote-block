@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Random Quote Block\n"
+"POT-Creation-Date: 2022-02-14 12:57+0200\n"
+"PO-Revision-Date: 2022-02-14 12:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: Afrikaans kokkieh@gmail.com\n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: kokkieh-random-quote-block.php:19
+msgid "Hello World!"
+msgstr "Hallo Wêreld!"
+
+#: kokkieh-random-quote-block.php:48
+msgid "Random Quote Block Settings"
+msgstr "Lukraak Aanhalingsblok Verstellings"
+
+#: kokkieh-random-quote-block.php:49 kokkieh-random-quote-block.php:60
+msgid "Random Quote Block"
+msgstr "Lukraak Aanhalingsblok"
+
+#: kokkieh-random-quote-block.php:66
+msgid "Save Changes"
+msgstr "Stoor Veranderinge"
+
+#: kokkieh-random-quote-block.php:78
+msgid "API Credentials"
+msgstr "API Besonderhede"
+
+#: kokkieh-random-quote-block.php:84
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: kokkieh-random-quote-block.php:91
+msgid "API Key"
+msgstr "API Sleutel"
+
+#: kokkieh-random-quote-block.php:102
+msgid "Abbreviations.com API Credentials"
+msgstr "Abbreviotions.com API Besonderhede"
