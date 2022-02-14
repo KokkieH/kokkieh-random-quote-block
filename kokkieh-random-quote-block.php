@@ -33,6 +33,20 @@ function kokkieh_quote_load_textdomain() {
     );
 }
 
+// Function to add API attribution text
+
+function kokkieh_quote_attribution_link() {
+    $kokkieh_quote_api_url = 'http://www.quotes.net/quotes_api.php';
+    return sprintf(
+        esc_html__( 'Powered by the STANDS4 Web Services %s', 'kokkieh-random-quote-block'),
+        sprintf(
+            '<a href="%s">%s</a>',
+            $kokkieh_quote_api_url,
+            esc_html__( 'Quotes API', 'kokkieh-random-quote-block' )
+        )
+    );
+}
+
 // Add Settings page
 
 const SETTINGS_SECTION = 'kokkieh_quote_main';
@@ -54,6 +68,7 @@ function kokkieh_quote_create_menu() {
 }
 
 // Create Settings page
+
 function kokkieh_quote_settings_page() {
     ?>
     <div class="wrap">
@@ -67,6 +82,7 @@ function kokkieh_quote_settings_page() {
 
             ?>
         </form>
+        <p><?php echo kokkieh_quote_attribution_link() ?></p>
     </div>
     <?php
 }
@@ -101,9 +117,13 @@ function kokkieh_quote_register_settings() {
     register_setting( PAGE_SLUG, 'kokkieh_quote_api_key' );
 }
 
+// Insert section description
+
 function kokkieh_quote_section_text() {
-    echo '<p>' . __('Abbreviations.com API Credentials', 'kokkieh-random-quote-block' ) . '</p>';
+    echo '<p>' . __('Quotes.net API Credentials', 'kokkieh-random-quote-block' ) . '</p>';
 }
+
+// Insert form fields
 
 function kokkieh_quote_render_username() {
     kokkieh_quote_render_options( 'kokkieh_quote_username');

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Random Quote Block\n"
-"POT-Creation-Date: 2022-02-14 15:55+0200\n"
-"PO-Revision-Date: 2022-02-14 15:56+0200\n"
+"POT-Creation-Date: 2022-02-14 19:24+0200\n"
+"PO-Revision-Date: 2022-02-14 19:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Afrikaans kokkieh@gmail.com\n"
 "Language: af\n"
@@ -12,45 +12,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: kokkieh-random-quote-block.php:19
 msgid "Hello World!"
 msgstr "Hallo Wêreld!"
 
-#: kokkieh-random-quote-block.php:48
+#: kokkieh-random-quote-block.php:41
+#, php-format
+msgid "Powered by the STANDS4 Web Services %s"
+msgstr "Aangedryf deur die STANDS4 Web Dienste %s"
+
+#: kokkieh-random-quote-block.php:45
+msgid "Quotes API"
+msgstr "Aanhalings API"
+
+#: kokkieh-random-quote-block.php:62
 msgid "Random Quote Block Settings"
 msgstr "Lukraak Aanhalingsblok Verstellings"
 
-#: kokkieh-random-quote-block.php:49 kokkieh-random-quote-block.php:60
+#: kokkieh-random-quote-block.php:63 kokkieh-random-quote-block.php:75
 msgid "Random Quote Block"
 msgstr "Lukraak Aanhalingsblok"
 
-#: kokkieh-random-quote-block.php:66
+#: kokkieh-random-quote-block.php:81
 msgid "Save Changes"
 msgstr "Stoor Veranderinge"
 
-#: kokkieh-random-quote-block.php:70
-msgid ""
-"Powered by the STANDS4 Web Services <a href=\"http://www.quotes.net/"
-"quotes_api.php\">Quotes API</a> "
-msgstr ""
-"Aangedryf deur die STANDS4 Web Dienste <a href=“http://www.quotes."
-"net/quotes_api.php”>Aanhalings API</a> "
-
-#: kokkieh-random-quote-block.php:82
+#: kokkieh-random-quote-block.php:97
 msgid "API Credentials"
 msgstr "API Besonderhede"
 
-#: kokkieh-random-quote-block.php:88
+#: kokkieh-random-quote-block.php:103
 msgid "Username"
 msgstr "Gebruikersnaam"
 
-#: kokkieh-random-quote-block.php:95
+#: kokkieh-random-quote-block.php:110
 msgid "API Key"
 msgstr "API Sleutel"
 
-#: kokkieh-random-quote-block.php:106
+#: kokkieh-random-quote-block.php:123
 msgid "Abbreviations.com API Credentials"
-msgstr "Abbreviotions.com API Besonderhede"
+msgstr "Abbreviations.com API Besonderhede"
+
+#~ msgid "Powered by the STANDS4 Web Services <a href=\"http://www.quotes.net/quotes_api.php\">Quotes API</a> "
+#~ msgstr "Aangedryf deur die STANDS4 Web Dienste <a href=“http://www.quotes.net/quotes_api.php”>Aanhalings API</a> "
