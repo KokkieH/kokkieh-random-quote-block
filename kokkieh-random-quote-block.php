@@ -34,14 +34,14 @@ function kokkieh_quote_load_textdomain() {
 }
 
 // Add Settings page
-add_action( 'admin_menu', 'kokkieh_quote_create_menu' );
-
-add_action( 'admin_init', 'kokkieh_quote_register_settings' );
 
 const SETTINGS_SECTION = 'kokkieh_quote_main';
 const PAGE_SLUG = 'kokkieh_random_quote_block';
 
 // Create Settings menu item
+
+add_action( 'admin_menu', 'kokkieh_quote_create_menu' );
+
 function kokkieh_quote_create_menu() {
 
     add_options_page( 
@@ -63,7 +63,7 @@ function kokkieh_quote_settings_page() {
 
             settings_fields( PAGE_SLUG );
             do_settings_sections( PAGE_SLUG );
-            submit_button ( __('Save Changes', 'kokkieh-random-quote-block'), 'primary' );
+            submit_button ( __( 'Save Changes', 'kokkieh-random-quote-block' ), 'primary' );
 
             ?>
         </form>
@@ -72,6 +72,9 @@ function kokkieh_quote_settings_page() {
 }
 
 // Add settings to page
+
+add_action( 'admin_init', 'kokkieh_quote_register_settings' );
+
 function kokkieh_quote_register_settings() {
     add_settings_section(
         SETTINGS_SECTION,
@@ -103,15 +106,18 @@ function kokkieh_quote_section_text() {
 }
 
 function kokkieh_quote_render_username() {
-    $options = get_option( 'kokkieh_quote_username' );
-    $name = $options[ 'name' ];
-    echo "<input id='name' name='kokkieh_quote_username[name]'
-        type='text' value='" . esc_attr( $name ) . "'/>";
+    kokkieh_quote_render_options( 'kokkieh_quote_username');
 }
 
 function kokkieh_quote_render_api_key() {
-    $options = get_option( 'kokkieh_quote_api_key' );
+    kokkieh_quote_render_options( 'kokkieh_quote_api_key' );
+}
+
+function kokkieh_quote_render_options( $option_name ) {
+    $options = get_option( $option_name );
     $name = $options[ 'name' ];
-    echo "<input id='name' name='kokkieh_quote_api_key[name]'
-        type='text' value='" . esc_attr( $name ) . "'/>";
+    echo "<input id='name' 
+        name='" . esc_attr( $option_name ) . "[name]'
+        type='text' 
+        value='" . esc_attr( $name ) . "'/>";
 }

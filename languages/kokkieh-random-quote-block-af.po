@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Random Quote Block\n"
-"POT-Creation-Date: 2022-02-14 12:57+0200\n"
-"PO-Revision-Date: 2022-02-14 12:57+0200\n"
+"POT-Creation-Date: 2022-02-14 15:55+0200\n"
+"PO-Revision-Date: 2022-02-14 15:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: Afrikaans kokkieh@gmail.com\n"
 "Language: af\n"
@@ -31,18 +31,26 @@ msgstr "Lukraak Aanhalingsblok"
 msgid "Save Changes"
 msgstr "Stoor Veranderinge"
 
-#: kokkieh-random-quote-block.php:78
+#: kokkieh-random-quote-block.php:70
+msgid ""
+"Powered by the STANDS4 Web Services <a href=\"http://www.quotes.net/"
+"quotes_api.php\">Quotes API</a> "
+msgstr ""
+"Aangedryf deur die STANDS4 Web Dienste <a href=“http://www.quotes."
+"net/quotes_api.php”>Aanhalings API</a> "
+
+#: kokkieh-random-quote-block.php:82
 msgid "API Credentials"
 msgstr "API Besonderhede"
 
-#: kokkieh-random-quote-block.php:84
+#: kokkieh-random-quote-block.php:88
 msgid "Username"
 msgstr "Gebruikersnaam"
 
-#: kokkieh-random-quote-block.php:91
+#: kokkieh-random-quote-block.php:95
 msgid "API Key"
 msgstr "API Sleutel"
 
-#: kokkieh-random-quote-block.php:102
+#: kokkieh-random-quote-block.php:106
 msgid "Abbreviations.com API Credentials"
 msgstr "Abbreviotions.com API Besonderhede"
